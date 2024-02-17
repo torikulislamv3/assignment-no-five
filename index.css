@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
+
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+.font-inter{
+    font-family: "inter", sans-serif;
+}
+/* banner section styles */
+.banner {
+    height: 90vh;
+    width: 100%;
+    background: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* main section first */
+
+.new15{
+    background: url('./images/Rectangle\ 8.png');
+    background-position: center;
+    background-size: cover;
+}
+.couple{
+    background: url('./images/reg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+

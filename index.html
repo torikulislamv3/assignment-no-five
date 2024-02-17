@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="m-5">
+    <header>
+        <div class="navbar bg-base-100 mb-10">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="font-raleway">Home</a></li>
+                  <li>
+                    <a class="font-raleway">About</a>
+                    
+                  </li>
+                  <li><a class="font-raleway">Destination</a></li>
+                  <li><a class="font-raleway">Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl font-raleway">E-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-raleway">Home</a></li>
+                <li>
+                  
+                    <summary class="font-raleway">About</summary>
+                   
+                  
+                </li>
+                <li><a class="font-raleway">Destination</a></li>
+                <li><a class="font-raleway">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-[#1DD100] border-[#1DD100] font-raleway">Bus <img src="./images/bus-icon.png" alt="coming soon"></a>
+            </div>
+          </div>
+<!-- banner section -->
+          <section class="banner mb-10">
+            <div class="pt-52">
+                <h1 class="font-raleway text-[#fff] text-6xl font-extrabold mb-5 text-center">End-to-End Travel with</h1>
+            <h1 class="font-raleway text-[#fff] text-6xl font-extrabold text-green-600 mb-5 text-center">E Paribahan</h1>
+
+            <div class="text-center">
+                <button class="btn btn-success bg-green-600 font-raleway">Buy Tickets</button>
+            </div>
+            </div>
+          </section>
+    </header>
+
+    <main>
+            <!-- best offer section -->
+            <section class="best-offer">
+                <h2 class="font-raleway text-center text-[#030712] font-bold text-4xl mb-10">Best offers for you</h2>
+                <div class="offer-container mb-10 sm:flex flex-row justify-around">
+                    <div class="new15 h-[150px] w-[400px] bg-no-repeat flex justify-around">
+                        <div class="col-one pt-4">
+                            <h1 class="font-inter text-[#030712] text-3xl font-semibold mb-2">15% OFF</h1>
+                            <h4 class="font-inter text-[#141824] text-xl font-semibold mb-2">on your next purchase</h4>
+                            <p class="font-inter text-[#27292e] text-sm font-medium">use by January 2024</p>
+                        </div>
+                        <div class="col-two pt-10">
+                            <h1 class="font-raleway text-[#030712] text-3xl font-semibold mb-2">NEW15</h1>
+                            <p class="font-raleway text-[#27292e] text-sm font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="couple h-[150px] w-[400px] bg-no-repeat flex justify-around">
+                        <div class="col-one pt-4">
+                            <h1 class="font-inter text-[#030712] text-3xl font-semibold mb-2">20% OFF</h1>
+                            <h4 class="font-inter text-[#141824] text-xl font-semibold mb-2">on your next purchase</h4>
+                            <p class="font-inter text-[#27292e] text-sm font-medium">use by January 2024</p>
+                        </div>
+                        <div class="col-two pt-10">
+                            <h1 class="font-raleway text-[#030712] text-3xl font-semibold mb-2">Couple 20</h1>
+                            <p class="font-raleway text-[#27292e] text-sm font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+
+
+                </div>
+               <div class="text-center text-green-600">
+                <button class="btn btn-outline border-green-600 btn-primary text-green-600"><span class="text-green-600">See All Offers</span></button>
+               </div>
+            </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
