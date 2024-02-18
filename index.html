@@ -142,24 +142,36 @@
             </section>
 
             <!-- seat booking section -->
-           <section>
-            <h3 class="font-raleway font-semibold text-2xl text-[#030712] mb-4">Select Your Seat</h3>
-            <div class="left flex justify-around">
-                
-                <div class="flex">
-                    
-                    <img src="./images/seat-gray.png" alt="coming">
-                    <p>Available</p>
+           <section class="sm:flex justify-around">
+            <div class="bam">
+                <div class="flex justify-between dash mb-5">
+                    <div><h3 class="font-raleway font-semibold text-2xl text-[#030712] mb-4">Select Your Seat</h3></div>
+                    <div></div>
                 </div>
-                <div class="flex">
-                    <img class="h-7" src="./images/seat-green-filled.png" alt="coming">
-                    <p class="text-green-600">Selected</p>
-                   </div>
-                   
-            </div>
-           <div class="text-right"> <button class="btn btn-active btn-ghost"><img src="./images/wheel.png" alt="comming"></button></div>
-            <div class="seat grid grid-cols-5 ">
-                <!-- <div class="A"> -->
+                <!--  -->
+                <div class="flex justify-between dash mb-5 pb-3">
+                    <div>
+                        <div class="flex">
+                            <img src="./images/seat-gray.png" alt="coming">
+                            <p>Available</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <img class="h-7" src="./images/seat-green-filled.png" alt="coming">
+                            <p class="text-green-600">Selected</p>
+                           </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex justify-between mb-3">
+                    <div></div>
+                    <div class="">
+                        <button class="btn btn-active btn-ghost"><img src="./images/wheel.png" alt="coom"></button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="grid grid-cols-5">
                     <button class="btn btn-active btn-ghost w-12 mb-3">A</button>
                     <button class="btn btn-active btn-ghost  w-12 mb-3">A1</button>
                     <button class="btn btn-active btn-ghost  w-12 mb-3">A2</button>
@@ -211,13 +223,85 @@
                     <button class="btn btn-active btn-ghost  w-12 mb-3">J3</button>
                     <button class="btn btn-active btn-ghost  w-12 mb-3">J4</button>
                 </div>
-                
-                   
-               
-   
+                <!--  -->
             </div>
-            <div class="right">
-                
+            <div class="dan">
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-raleway font-semibold text-2xl text-[#030712] mb-4">Select Your Seat</h3>
+                    </div>
+                    <div></div>
+                </div>
+                <!--  -->
+                <div class="flex justify-around dash pb-3">
+                    <div><h4 class="text-[#030712] font-medium">Seat</h4></div>
+                    <div><h4 class="text-[#030712] font-medium">Class</h4></div>
+                    <div><h4 class="text-[#030712] font-medium">Price</h4></div>
+                </div>
+                <!--  -->
+                <div class="flex justify-around pb-3">
+                    <div><h4 class="">C2</h4></div>
+                    <div><h4 class="">Economy</h4></div>
+                    <div><h4 class="">550</h4></div>
+                </div>
+                <!--  -->
+                <div class="flex justify-around pb-3">
+                    <div><h4 class="">C2</h4></div>
+                    <div><h4 class="">Economy</h4></div>
+                    <div><h4 class="">550</h4></div>
+                </div>
+                <!--  -->
+                <hr>
+                <div class="flex justify-between mb-4">
+                    <div><h3 class="font-[#030712] font-medium">Total Price</h3></div>
+                    <div class="font-[#030712] font-medium">BDT 1100</div>
+                </div>
+                <!--  -->
+                <div class="flex justify-between mb-3">
+                    <div>
+                        <input class="cupon" type="text" placeholder="Have any coupon?">
+                    </div>
+                    <div>
+                        <button class="h-7 w-16 bg-green-600 text-white text-sm rounded-sm">Apply</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex justify-between mb-3">
+                    <div class="font-[#030712] font-medium">
+                        Grand Total
+                    </div>
+                    <div class="font-[#030712] font-medium">
+                        BDT 1100
+                    </div>
+                </div>
+                <!--  -->
+                <div>
+                    <label for="name"> Passenger Name* <br> <br>
+                        <input type="text" placeholder="Enter your name">
+                    </label>
+                </div>
+                <!--  -->
+                <div>
+                    <label for="name"> Phone Number* <br> <br>
+                        <input type="number" placeholder="Enter your phone number">
+                    </label>
+                </div>
+                <!--  -->
+                <div>
+                    <label for="name"> Email ID <br> <br>
+                        <input type="text" placeholder="Enter your email id">
+                    </label>
+                </div>
+                <!--  -->
+                <div>
+                    <button class="w-full h-10 bg-green-600 text-white mt-4 rounded-lg mb-3">Next</button>
+                </div>
+                <!--  -->
+                <div class="flex justify-between">
+                    <div><a class="underline text-xs">Terms and Conditions</a></div>
+                    <div><a class="underline text-xs">Cancellation Policy</a></div>
+                </div>
+                <!--  -->
             </div>
            </section>
             
