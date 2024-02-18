@@ -11,7 +11,7 @@
 .banner {
     height: 90vh;
     width: 100%;
-    background: url('./images/banner.png');
+    background: url('images/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,12 +26,12 @@
 /* main section first */
 
 .new15{
-    background: url('./images/Rectangle\ 8.png');
+    background: url('images/Rectangle\ 8.png');
     background-position: center;
     background-size: cover;
 }
 .couple{
-    background: url('./images/reg.png');
+    background: url('images/reg.png');
     background-position: center;
     background-size: cover;
 }
