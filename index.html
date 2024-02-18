@@ -9,6 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="m-5">
     <header>
@@ -55,7 +60,7 @@
             <h1 class="font-raleway text-[#fff] text-6xl font-extrabold text-green-600 mb-5 text-center">E Paribahan</h1>
 
             <div class="text-center">
-                <button class="goSection btn btn-success bg-green-600 font-raleway">Buy Tickets</button>
+                <a href="#menubar" class="goSection btn btn-success bg-green-600 font-raleway">Buy Tickets</a>
             </div>
             </div>
           </section>
@@ -142,7 +147,7 @@
             </section>
 
             <!-- seat booking section -->
-           <section class="sm:flex justify-around">
+           <section id="menubar" class="sm:flex justify-around">
             <div class="bam">
                 <div class="flex justify-between dash mb-5">
                     <div><h3 class="font-raleway font-semibold text-2xl text-[#030712] mb-4">Select Your Seat</h3></div>
@@ -308,8 +313,9 @@
     </main>
 
     <footer>
-
+        
     </footer>
     <script src="index.js"></script>
 </body>
 </html>
+
