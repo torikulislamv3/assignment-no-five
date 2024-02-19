@@ -4,6 +4,9 @@ let seatSpanCount = 0;
 let selectedSeat = 0;
 
 const leftSeat = document.getElementById("left-seat");
+
+
+let totalPrice = document.getElementById("total-price");
 // console.log(spanSeat.innerText)
 for(index = 0; index < seatBus.length; index++){
     const seats = seatBus[index];
@@ -21,6 +24,7 @@ for(index = 0; index < seatBus.length; index++){
         leftSeat.innerHTML = parseInt(leftSeat.innerHTML)-1;
         selectedSeat++;
         console.log(selectedSeat);
+        totalPrice.innerHTML = parseInt(totalPrice.innerHTML)+550;
         
         
         // console.log("clicked");
