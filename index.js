@@ -62,7 +62,7 @@ for(index = 0; index < seatBus.length; index++){
 
 let applyBtn = document.getElementById("coupon-btn");
 let couponField = document.getElementById("coupon-discount");
-let discontContainer = document.getElementById("discount-p-container");
+
 
 
 applyBtn.addEventListener("click", function(){
@@ -71,10 +71,21 @@ applyBtn.addEventListener("click", function(){
         // console.log(15);
         discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 15);
         grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
+        const discontContainer = document.getElementById("discount-p-container");
+
+        const D = document.createElement("p");
+        D.innerText = 'Discount Price';
+
+        const TK = document.createElement("p");
+        TK.innerText = discountPrice;
+
+        discontContainer.appendChild(D);
+        discontContainer.appendChild(TK);
+
+
+
         // console.log(grandTotal);
-        const discountPriceG = document.createElement('p');
-        discountPriceG.innerText = 'Discount Price';
-        discountContainer.appendChild('discountPriceG');
+        
 
         
         // console.log(discountPrice);
@@ -83,6 +94,16 @@ applyBtn.addEventListener("click", function(){
         discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 20);
         grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
         // console.log(20);
+        const discontContainer = document.getElementById("discount-p-container");
+
+        const D = document.createElement("p");
+        D.innerText = 'Discount Price';
+
+        const TK = document.createElement("p");
+        TK.innerText = discountPrice;
+
+        discontContainer.appendChild(D);
+        discontContainer.appendChild(TK);
     }else{
         console.log(0);
     }
