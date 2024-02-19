@@ -49,7 +49,7 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="goSection btn text-[#1DD100] border-[#1DD100] font-raleway">Bus <img src="./images/bus-icon.png" alt="coming soon"></a>
+              <a href="#jah" class="goSection btn text-[#1DD100] border-[#1DD100] font-raleway">Bus <img src="./images/bus-icon.png" alt="coming soon"></a>
             </div>
           </div>
 <!-- banner section -->
@@ -105,7 +105,7 @@
             </section>
 
             <!-- menubar section -->
-            <section class="mb-10">
+            <section id="jah" class="mb-10">
                 <h2 class="text-center mb-5 font-raleway text-3xl font-bold">E.H Paribahan</h2>
                 <p class="text-center font-inter mb-10">You can implement real-time seat availability, multiple payment gateways, offer seat map functionality, and other features. A transport booking <br>eliminates human factor risks and improves conversion rates for your business.</p>
 
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <div>
-                            <div><button class="btn btn-outline btn-prymari border-green-400"><img src="./images/seat-green-filled.png" alt="coming"><span class="text-green-600">40 Seats left</span></button></div>
+                            <div><button class="btn btn-outline btn-prymari border-green-400"><img src="./images/seat-green-filled.png" alt="coming"><span class="text-green-600"><span id="left-seat">40</span> Seats left</span></button></div>
                         </div>
                     </div>
                     <div class="s-row flex justify-between gap-[150px] mb-6">
@@ -251,7 +251,7 @@
                 
                 
                 <div class="flex justify-around dash pb-3">
-                    <div><h4 class="text-[#030712] font-medium">Seat</h4></div>
+                    <div><h4 class="text-[#030712] font-medium">Seat <span class="bg-green-600 rounded-lg text-black" id="seat-no">0</span> </h4></div>
                     <div><h4 class="text-[#030712] font-medium">Class</h4></div>
                     <div><h4 class="text-[#030712] font-medium">Price</h4></div>
                 </div>
