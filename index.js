@@ -66,8 +66,10 @@ let couponField = document.getElementById("coupon-discount");
 
 
 applyBtn.addEventListener("click", function(){
+
     if(couponField.value === "NEW15"){
-        
+        couponField.style.visibility = 'hidden';
+        applyBtn.style.visibility = 'hidden';
         // console.log(15);
         discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 15);
         grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
@@ -91,6 +93,9 @@ applyBtn.addEventListener("click", function(){
         // console.log(discountPrice);
     }
     else if(couponField.value === "Couple 20"){
+        couponField.style.visibility = 'hidden';
+        applyBtn.style.visibility = 'hidden';
+        
         discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 20);
         grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
         // console.log(20);
@@ -104,6 +109,8 @@ applyBtn.addEventListener("click", function(){
 
         discontContainer.appendChild(D);
         discontContainer.appendChild(TK);
+
+
     }else{
         console.log(0);
     }
