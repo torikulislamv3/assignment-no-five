@@ -9,6 +9,7 @@ const leftSeat = document.getElementById("left-seat");
 let totalPrice = document.getElementById("total-price");
 
 let grandTotal = document.getElementById("grand-total");
+let discountPrice = 0;
 // console.log(spanSeat.innerText)
 for(index = 0; index < seatBus.length; index++){
     const seats = seatBus[index];
@@ -59,7 +60,33 @@ for(index = 0; index < seatBus.length; index++){
 }
 
 
+let applyBtn = document.getElementById("coupon-btn");
+let couponField = document.getElementById("coupon-discount");
+let discontContainer = document.getElementById("discount-p-container");
 
+
+applyBtn.addEventListener("click", function(){
+    if(couponField.value === "NEW15"){
+        
+        // console.log(15);
+        discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 15);
+        grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
+        // console.log(grandTotal);
+        const discountPriceG = document.createElement('p');
+        discountPriceG.innerText = 'Discount Price';
+        discountContainer.appendChild('discountPriceG');
+
+        
+        // console.log(discountPrice);
+    }
+    else if(couponField.value === "Couple 20"){
+        discountPrice =  (parseInt(totalPrice.innerHTML) / 100 * 20);
+        grandTotal.innerHTML = parseInt(totalPrice.innerHTML) - discountPrice;
+        // console.log(20);
+    }else{
+        console.log(0);
+    }
+})
 
 
 

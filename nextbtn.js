@@ -1,13 +1,15 @@
 
 let nextBtn = document.getElementById("next-btn");
 let inputF = document.getElementById("number-type")
-inputF.addEventListener("keypress", (e) =>{
+inputF.addEventListener("keyup", (e) =>{
     const valueF = e.currentTarget.value;
-    if(valueF === "" ){
+    if(valueF.length > 0 ){
+        // console.log("1");
         nextBtn.style.backgroundColor = "green";
-        nextBtn.disabled = true;
-    }else{
         nextBtn.disabled = false;
-        // nextBtn.style.backgroundColor = "gray";
+    }else{
+        // console.log("0");
+        nextBtn.disabled = true;
+        
     }
 })
