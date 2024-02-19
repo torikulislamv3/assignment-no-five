@@ -292,10 +292,10 @@
                 <!--  -->
                 <div class="flex justify-between mb-3">
                     <div>
-                        <input id="bonus" class="cupon" type="text" placeholder="Have any coupon?">
+                        <input id="coupon-discount" class="cupon" type="text" placeholder="Have any coupon?">
                     </div>
                     <div>
-                        <button class="h-7 w-16 bg-green-600 text-white text-sm rounded-sm">Apply</button>
+                        <button id="coupon-btn" class="h-7 w-16 bg-green-600 text-white text-sm rounded-sm">Apply</button>
                     </div>
                 </div>
                 <!--  -->
@@ -316,7 +316,7 @@
                 <!--  -->
                 <div>
                     <label for="name"> Phone Number* <br> <br>
-                        <input type="number" placeholder="Enter your phone number">
+                        <input id="number-type" type="number" placeholder="Enter your phone number">
                     </label>
                 </div>
                 <!--  -->
@@ -327,7 +327,7 @@
                 </div>
                 <!--  -->
                 <div>
-                    <button onclick="openPopup()" class="w-full h-10 bg-green-600 text-white mt-4 rounded-lg mb-3">Next</button>
+                    <button onclick="openPopup()" class="w-full h-10 bg-gray-600 text-white mt-4 rounded-lg mb-3" id="next-btn" type="submit" disabled >Next</button>
                 </div>
                 <!--  -->
                 <div class="flex justify-between">
@@ -339,6 +339,7 @@
            </section>
 <!-- popup section -->
            <section class="">
+            <!-- <div class="w-full h-screen flex justify-center items-center fixed top-0"> -->
             <div id="popup" class="popup w-[600px] h-[400px] bg-[#FFFFFF] rounded-md text-center">
                 <div class="img-pop">
                     <img class="" src="images/success.png" alt="done">
@@ -352,6 +353,7 @@
                 <button onclick="closePoput()" class="btn btn-active btn-primary w-[270px] rounded-lg bg-green-600">Continue</button>
                 
             </div>
+        </div>
            </section>
             
     </main>
@@ -360,9 +362,9 @@
         
     </footer>
     <script src="index.js"></script>
-    <script src="coupon.js"></script>
+    
+    <script src="nextbtn.js"></script>
     <script>
-        let popup = document.getElementById("popup");
         function openPopup(){
             popup.classList.add("open-popup")
         }

@@ -49,7 +49,7 @@
 
 .popup{
     position: absolute;
-    top: 2200px;
+    top: 130rem;
     left: 40%;
     transform: translate(-50%, -50%) scale(0.1);
     visibility: hidden;

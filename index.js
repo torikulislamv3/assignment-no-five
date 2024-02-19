@@ -8,7 +8,7 @@ const leftSeat = document.getElementById("left-seat");
 
 let totalPrice = document.getElementById("total-price");
 
-let grandTotal = document.getElementById("grand-total")
+let grandTotal = document.getElementById("grand-total");
 // console.log(spanSeat.innerText)
 for(index = 0; index < seatBus.length; index++){
     const seats = seatBus[index];
@@ -57,6 +57,8 @@ for(index = 0; index < seatBus.length; index++){
         
     })
 }
+
+
 
 
 
