@@ -65,6 +65,12 @@
     -o-transform: translate(-50%, -50%) scale(1);
 }
 
+.foot {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 60px;
+    border-bottom: 1px dashed white;
+}
 
 
 
