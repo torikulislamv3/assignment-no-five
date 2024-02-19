@@ -292,7 +292,7 @@
                 <!--  -->
                 <div class="flex justify-between mb-3">
                     <div>
-                        <input class="cupon" type="text" placeholder="Have any coupon?">
+                        <input id="bonus" class="cupon" type="text" placeholder="Have any coupon?">
                     </div>
                     <div>
                         <button class="h-7 w-16 bg-green-600 text-white text-sm rounded-sm">Apply</button>
@@ -304,7 +304,7 @@
                         Grand Total
                     </div>
                     <div class="font-[#030712] font-medium">
-                        BDT 0
+                        BDT <span id="grand-total">0</span>
                     </div>
                 </div>
                 <!--  -->
@@ -327,7 +327,7 @@
                 </div>
                 <!--  -->
                 <div>
-                    <button class="w-full h-10 bg-green-600 text-white mt-4 rounded-lg mb-3">Next</button>
+                    <button onclick="openPopup()" class="w-full h-10 bg-green-600 text-white mt-4 rounded-lg mb-3">Next</button>
                 </div>
                 <!--  -->
                 <div class="flex justify-between">
@@ -337,6 +337,22 @@
                 <!--  -->
             </div>
            </section>
+<!-- popup section -->
+           <section class="">
+            <div id="popup" class="popup w-[600px] h-[400px] bg-[#FFFFFF] rounded-md text-center">
+                <div class="img-pop">
+                    <img class="" src="images/success.png" alt="done">
+                </div>
+                <h3 class="text-2xl font-bold text-green-600 mb-3">SUCCESS</h3>
+                <div>
+                    <h2 class="text-[#4A4A4A] font-bold">Thank you for Booking Our Bus Seats. </h2>
+                <h2 class="text-[#4A4A4A] font-bold mb-2">We are working hard to find the best service and deals for you. </h2>
+                <p class="text-[#4A4A4A] mb-3">Shortly you will find a confirmation in your email.</p>
+                </div>
+                <button onclick="closePoput()" class="btn btn-active btn-primary w-[270px] rounded-lg bg-green-600">Continue</button>
+                
+            </div>
+           </section>
             
     </main>
 
@@ -344,6 +360,16 @@
         
     </footer>
     <script src="index.js"></script>
+    <script src="coupon.js"></script>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePoput(){
+            popup.classList.remove("open-popup")
+        }
+    </script>
 </body>
 </html>
 

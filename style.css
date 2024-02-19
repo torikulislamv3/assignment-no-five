@@ -40,7 +40,30 @@
     
     border-bottom:  1px dashed black;
 }
+.img-pop {
+    padding-top: 50px;
+    padding-left: 250px;
+    margin-bottom: 20px;
+}
 
+
+.popup{
+    position: absolute;
+    top: 2200px;
+    left: 40%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    bottom: 10%;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+}
 
 
 
